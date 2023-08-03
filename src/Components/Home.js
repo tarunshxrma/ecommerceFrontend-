@@ -20,7 +20,6 @@ const Home = ({ count }) => {
         axios.get("https://backend-ecommer-dq0g.onrender.com/products/cellphonesandaccessories")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
-            console.log(data)
     }, [])
 
     const loadMoreItems = () => {
