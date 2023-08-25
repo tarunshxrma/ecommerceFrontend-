@@ -3,6 +3,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Kanit&family=Ubuntu&family=Varela+Round&family=Ysabeau+SC:wght@300&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -122,12 +123,11 @@ nav{
     display: block;
 }
 #login-page{
-    
     height: 100vh;
-    background: linear-gradient(to right, #a8ff78, #78ffd6);
+    background: gainsboro;
 }
 #register-page{
-    background: linear-gradient(to right, #a8ff78, #78ffd6);
+    background: gainsboro;
     height: 180vh;
 }
 .login-register-header h1{
@@ -286,17 +286,10 @@ nav{
 .bestseller-product-card {
     text-align: center;
     width: 19rem;
-    background-color: white;
+    background-color: gainsboro;
     margin-bottom: 3rem;
     padding: 1rem 0 0 0;
-    border-radius: 1rem;
-    box-shadow: 5px 5px 10px #bebebe,
-        -5px -5px 10px #ffffff;
-}
-
-.bestseller-product-card:hover {
-    transform: scale(110%);
-    transition: 1s ease-in-out;
+    border-radius: 0.2rem;
 }
 
 .bestseller-product-card img {
@@ -359,7 +352,7 @@ nav{
 }
 .featured {
     width: 100%;
-    background: linear-gradient(to right, #a8ff78, #78ffd6);
+    background-color: gainsboro;
 }
 .featured-products h3 {
     padding-top: 4rem;
@@ -452,14 +445,18 @@ nav{
     display: flex;
     justify-content: space-around;
     margin: 4rem 0 2rem 0;
+    background-color: #0d0d0d;
+    color: white;
 }
 .footer-down h5{
+    margin-top: 2rem;
     margin-bottom: 1rem;
+    color: white;
 }
 .footer-links{
     display: block;
     text-decoration: none;
-    color: #0d0d0d;
+    color: white;
     margin-bottom: 1rem;
 }
 .payment-options{
@@ -532,16 +529,10 @@ nav{
 .product-card{
     text-align: center;
     width: 23rem;
-    background-color: white;
+    background-color: gainsboro;
     margin-bottom: 3rem;
     padding: 1rem 0;
-    border-radius: 1rem;
-    box-shadow: 5px 5px 10px #bebebe,
-            -5px -5px 10px #ffffff;
-}
-.product-card:hover{
-    transform: scale(96%);
-    transition: 1s ease-in-out;
+    border-radius: 0.2rem;
 }
 .product-card img{
     width: 12rem;
@@ -571,8 +562,8 @@ nav{
     padding: 0.5rem 2rem;
     font-weight: 500;
     border-radius: 0.5rem;
-    background-color: #FFD814;
-    border: 2px solid #FCD200;
+    background-color: aquamarine;
+    border: none;
 }
 .load-more-products-container{
     display: flex;
@@ -598,10 +589,8 @@ nav{
 .product-data-description{
     margin: 2rem 0 5rem 0;
     width: 90%;
-    border-radius: 30px;
-    background: #fef9f8;
-    box-shadow: 5px 5px 2px #b7b3b3,
-            -5px -5px 2px #ffffff;
+    border-radius: 10px;
+    background-color: gainsboro;
 }
 .product-data-description-details{
     padding: 2rem;
@@ -626,8 +615,8 @@ nav{
     height: 3rem;
     font-weight: 500;
     border-radius: 0.5rem;
-    background-color: #FFD814;
-    border: 2px solid #FCD200;
+    background-color: aquamarine;
+    border: none;
     margin-top: 2rem;
 }
 .cart-heading{
@@ -640,9 +629,7 @@ nav{
 }
 .cart{
     width: 80%;
-    background: #fef9f8;
-    box-shadow: 5px 5px 2px #b7b3b3,
-            -5px -5px 2px #ffffff;
+    background-color: gainsboro;
 }
 .cart-data{
     padding: 2rem;
@@ -705,7 +692,7 @@ nav{
     justify-content: flex-end;
 }
 .checkout button{
-    width: 15rem;
+    width: 62rem;
     height: 3.5rem;
     border-radius: 0.3rem;
     border: none;
@@ -764,7 +751,7 @@ nav {
     flex-direction: column;
     width: 203.5%;
     height: 60rem;
-    background: linear-gradient(to right, #a8ff78, #78ffd6);
+    background-color: gainsboro;
 }
 .mobile-menu-icon {
     display: block;
