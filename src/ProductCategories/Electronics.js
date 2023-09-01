@@ -31,7 +31,7 @@ const Electronics = ({ addToCart, count }) => {
         <>
             <Navbar count={count} />
             <MdOutlineArrowBackIosNew className='back-icon' onClick={goBack} />
-            <div className='product-category-dropdown-container'>
+            {/* <div className='product-category-dropdown-container'>
                 <div className="product-category-dropdown">
                     <button className="product-category-dropdown-btn">SHOP BY CATEGORY IN ELECTRONICS <IoIosArrowDown /></button>
                     <div class="product-category-dropdown-content">
@@ -42,7 +42,7 @@ const Electronics = ({ addToCart, count }) => {
                         <Link to='/electronics/smarthome'>Smart Home</Link>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <h4 className='headings'>ELECTRONICS</h4>
             <div className='products-data-container'>
                 <div className='products-data'>

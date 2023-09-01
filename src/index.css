@@ -9,7 +9,7 @@
 #root{
     width: 100%;
     background-color: #fef9f838;
-    color: #0d0d0d6d;
+    /* color: #0d0d0d6d; */
     scroll-behavior: smooth;
 }
 

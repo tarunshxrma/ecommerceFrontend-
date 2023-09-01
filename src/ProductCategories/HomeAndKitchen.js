@@ -31,7 +31,7 @@ const HomeAndKitchen = ({ addToCart, count }) => {
         <>
             <Navbar count={count} />
             <MdOutlineArrowBackIosNew className='back-icon' onClick={goBack} />
-            <div className='product-category-dropdown-container'>
+            {/* <div className='product-category-dropdown-container'>
                 <div className="product-category-dropdown">
                     <button className="product-category-dropdown-btn">SHOP BY CATEGORY IN HOME AND KITCHEN <IoIosArrowDown /></button>
                     <div className="product-category-dropdown-content">
@@ -41,7 +41,7 @@ const HomeAndKitchen = ({ addToCart, count }) => {
                         <Link to='/homeandkitchen/storageandorganization'>Storage and Organization</Link>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <h4 className='headings'>HOME AND KITCHEN</h4>
             <div className='products-data-container'>
                 <div className='products-data'>

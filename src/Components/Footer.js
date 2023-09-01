@@ -60,10 +60,6 @@ const Footer = () => {
                     <p>itssharmatarun@gmail.com</p>
                     <h6>TELEPHONE</h6>
                     <p>00809-667665</p>
-                    <h6>ADDRESS</h6>
-                    <p>Shree nagar colony, MODINAGAR</p>
-                    <h6>WORKING HOURS</h6>
-                    <p>M - F 7:00am - 11:00pm</p>
                 </div>
             </div>
             <hr />

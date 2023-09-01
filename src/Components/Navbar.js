@@ -1,7 +1,7 @@
 import React from 'react'
 import './Components.css'
-import { FiUser } from 'react-icons/fi'
-import { BsCart3 } from 'react-icons/bs'
+import { BsPersonCircle } from 'react-icons/bs'
+import { RiShoppingCartFill } from 'react-icons/ri'
 // import { ImSearch } from 'react-icons/im'
 import { Link, NavLink } from 'react-router-dom'
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -19,13 +19,13 @@ const Navbar = () => {
                     {/* <div id='search'>
                         <ImSearch className='profile-cart-search-icon ' /><input type='search' placeholder='SEARCH SHOPIT'></input>
                     </div> */}
-                    <NavLink to='/cart' id='user-cart'><BsCart3 className='profile-cart-search-icon' /><span>MY CART</span></NavLink>
-                    {isLogged ? <NavLink to='/userprofile' id='user-profile'><FiUser className='profile-cart-search-icon' /><span>MY PROFILE</span></NavLink> : <NavLink to='/login' activeClassName='active' id='user-profile'><FiUser className='profile-cart-search-icon' /><span>LOGIN</span></NavLink>}
+                    {isLogged ? <NavLink to='/userprofile' id='user-profile'><BsPersonCircle className='profile-cart-search-icon' /><span>MY PROFILE</span></NavLink> : <NavLink to='/login' activeClassName='active' id='user-profile'><BsPersonCircle className='profile-cart-search-icon' /><span>LOGIN</span></NavLink>}
+                    <NavLink to='/cart' id='user-cart'><RiShoppingCartFill className='profile-cart-search-icon' /><span>MY CART</span></NavLink>
                 </div>
             </header>
             <nav className={isMobile ? "nav-links-mobile" : null} onClick={() => { setIsMobile(false) }}>
-                {isLogged ? <NavLink to='/userprofile' className='login links mobile-link'><FiUser className='profile-cart-search-icon' />MY PROFILE</NavLink> : <NavLink to='/login' className='login links mobile-link'><FiUser className='profile-cart-search-icon' />LOGIN</NavLink>}
-                <NavLink to='/cart' className='my-cart links mobile-link'><BsCart3 className='profile-cart-search-icon' /> MY CART</NavLink>
+                {isLogged ? <NavLink to='/userprofile' className='login links mobile-link'><BsPersonCircle className='profile-cart-search-icon' />MY PROFILE</NavLink> : <NavLink to='/login' className='login links mobile-link'><BsPersonCircle className='profile-cart-search-icon' />LOGIN</NavLink>}
+                <NavLink to='/cart' className='my-cart links mobile-link'><RiShoppingCartFill className='profile-cart-search-icon' /> MY CART</NavLink>
                 <NavLink to='/' activeClassName='active' className='links mobile-link'>HOME</NavLink>
                 <div className="dropdown">
                     <NavLink to='/store' activeClassName='active' className='links mobile-link'>STORE</NavLink>

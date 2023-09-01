@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Components.css"
 import Navbar from './Navbar'
-import HomeBannerCarousel from './HomeBannerCarousel'
+// import HomeBannerCarousel from './HomeBannerCarousel'
 import BestSellers from '../BestSellers/BestSellers'
 import HomeBannerAutoCarousel from './HomeBannerAutoCarousel'
 import Perks from './Perks'
@@ -20,8 +20,8 @@ const Home = ({ count }) => {
         axios.get("https://backend-ecommer-dq0g.onrender.com/products/cellphonesandaccessories")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
-    }, [])
-
+        }, [])
+        
     const loadMoreItems = () => {
         setVisible(prevValue => prevValue + 3)
     }
@@ -29,7 +29,9 @@ const Home = ({ count }) => {
     return (
         <>
             <Navbar count={count} />
-            <HomeBannerCarousel />
+            <HomeBannerAutoCarousel />
+            <FeaturedProducts />
+            <Perks />
             <div id='best-sellers'>
                 <h3>BEST SELLERS</h3>
                 <BestSellers />
@@ -49,12 +51,10 @@ const Home = ({ count }) => {
                     </div>
                 </div>
                 <div className='load-more-products-container-home'>
-                    <button onClick={loadMoreItems} className={visible === 15 ? 'load-more-products-button-hidden' : 'load-more-products-button-visible'}>LOAD MORE PRODUCTS »</button>
+                    <button onClick={loadMoreItems} className={visible === 15 ? 'load-more-products-button-hidden' : 'load-more-products-button-visible'}>LOAD MORE</button>
                 </div>
             </div>
-            <HomeBannerAutoCarousel />
-            <Perks />
-            <FeaturedProducts />
+            {/* <HomeBannerCarousel /> */}
             <hr className='home-hr' />
             <Footer />
         </>

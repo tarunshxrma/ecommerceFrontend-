@@ -3,12 +3,12 @@ import './Components.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import electronicsAutoCarouselImage from '../Assets/Home Page/auto-carousel-electronics-banner.png'
-import fashionAutoCarouselImage from '../Assets/Home Page/auto-carousel-fashion-banner.png'
-import healthAndPersonalCareAutoCarouselImage from '../Assets/Home Page/auto-carousel-health-and-personal-care-banner.png'
-import electronicsAutoCarouselImage2 from '../Assets/Home Page/auto-carousel-electronics-banner-2.png'
-import fashionAutoCarouselImage2 from '../Assets/Home Page/auto-carousel-fashion-banner-2.png'
-import healthAndPersonalCareAutoCarouselImage2 from '../Assets/Home Page/auto-carousel-health-and-personal-care-banner-2.png'
+import electronicsAutoCarouselImage from '../Assets/Home Page/books-banner.jpg'
+import fashionAutoCarouselImage from '../Assets/Home Page/electronics-banner.jpg'
+import healthAndPersonalCareAutoCarouselImage from '../Assets/Home Page/corousel_1.png'
+import electronicsAutoCarouselImage2 from '../Assets/Home Page/corousel_2.png'
+import fashionAutoCarouselImage2 from '../Assets/Home Page/corousel_3.png'
+import healthAndPersonalCareAutoCarouselImage2 from '../Assets/Home Page/corousel_1.png'
 
 const HomeBannerAutoCarousel = () => {
     const settings = {
